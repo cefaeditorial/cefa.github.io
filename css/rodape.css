@@ -1,0 +1,16 @@
+.rodape{
+    text-align: center;
+    font-size: 0.7rem;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    
+}
+.rodape_copyright{
+
+    align-items: center;
+    justify-content:center; /*itens a direita*/
+    flex-wrap: nowrap;
+    margin-top: 1em;
+}

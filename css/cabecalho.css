@@ -1,0 +1,103 @@
+
+@font-face {
+    font-family: 'Forum', cursive;
+    src: url(fonts/Raleway);
+}
+@font-face {
+    font-family: 'Raleway', sans-serif;
+    src: url(fonts/Raleway);
+}
+
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+.cabecalho{
+    font-family: 'Forum', sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    display: flex;
+    color:#592512;/*#F2F2F2;*/
+    background-color: #F2F2F2;
+    justify-content: space-between;   /* PARA O LOGO FICAR A ESQUERDA e o menu a direita*/
+    align-items: center; /*logo na mesma altura dos itens do menu*/
+
+}
+
+.cabecalho_logo{
+   width: 15%;
+   align-items: center;
+   padding-left: 4em;
+      
+}
+
+
+.cabecalho_menu{
+    /*background-color:/* #B32405; /*#012038;*/       
+    
+    /*line-height: 1.8em; /*tamanho da altura de cada linha */
+    margin-top: 0.3em;
+    letter-spacing: 0.1em;
+    border-left: 1px solid #995429;
+    text-transform: uppercase;
+    display: flex;
+    
+    justify-content: flex-end; /*itens a direita*/
+    align-items: center; /*divisão vertical*/
+    flex-wrap: nowrap;
+    word-spacing: 15em; /*espaço entre cada palavra*/
+    
+}
+
+.cabecalho_item-menu{
+    
+    display: inline-block;
+    
+}
+
+.cabecalho_item-menu a{
+    display: inline-block;
+    padding: 0.40em 1em; /*0.45em 1.5em; /*aumento de área clicável*/
+
+}
+
+.cabecalho_fundo{
+  width: 100%;
+margin: 0;
+padding: 0;
+}
+
+
+/*FLEXBOX B - LARGURAS A PARTIR DE 640PX O LOGO E O MENU FICAM UM AO LADO DO OUTRO, com o máximo de espaço entre eles*/
+@media (min-width: 640px){
+    .cabecalho{
+        font-size: 0.9em;
+        padding-top: 0;
+        padding-bottom: 0;
+      
+       /* line-height: 1.8em; */
+    }
+    
+    .cabecalho_item-menu{
+        padding: 0.6em 1.5em;
+    }
+
+    .cabecalho_logo{
+        width: 20%;
+        padding-left: 1em;
+      
+    }    
+  
+}
+  
+@media (min-width: 1024px){
+        
+    .cabecalho{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}

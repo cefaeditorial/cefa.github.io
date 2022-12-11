@@ -1,0 +1,133 @@
+.dados_basicos{
+    font-size: 0.75rem;
+    margin-top: 1.1rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+    width: 100%;
+}
+.dados_basicos td{ 
+    padding-left: 0.2rem;
+    text-align: left;
+    box-sizing: content-box;
+}
+
+.dados_basicos th{
+    font-weight: bold;
+    font-size: 0.70rem;
+}
+
+
+
+/* FIGURAS DO CORPO*/
+figure {
+    max-width: 100%;
+    box-sizing: border-box;
+    vertical-align: top;  /*O QUE FAZ IMAGEM + LEGENDA JUNTOS COMEÇAREM NO TOPO*/
+    text-align: center;
+      
+}
+
+/* SEÇÃO APRESENTAÇÃO CATALOGO*/
+.catalogo{
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /*CATALOGO DOS LIVROS - LISTA*/
+.catalogo_lista{
+    display: flex;/* no celular*/
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+}
+
+.catalogo_livro--btncomprar{
+    
+    margin-bottom: 1rem;
+    margin-left: 10%;
+    box-sizing: content-box;
+    width: 50%;
+    border: 0;
+    
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    padding: 1.1em 1.0rem;
+    background-color: #D9A01A;
+    color: #ffffff;
+    font-weight: 500;
+   letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+/*ITEM DA LISTA*/
+.catalogo_livro {
+    display: inline-block; 
+    justify-content: center;
+    justify-items: center; 
+    align-items: flex-start;
+    margin: 10%;    
+    padding: 5%;
+}
+    
+    figure img {    
+        width: 100%;  
+        
+        
+    }
+
+   
+
+
+@media (min-width: 540px){
+        
+    .catalogo_lista{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: start;
+        }
+
+    .catalogo_livro{
+        padding: 2%;
+        margin: 5%; 
+         }
+}
+
+
+
+ @media (min-width: 640px){
+    .catalogo_livro{
+        padding: 5%;
+        margin: 5%; 
+    }
+    .catalogo_lista{
+        display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-row: 1fr 1fr;
+        justify-content: center;
+        justify-items: center;
+        align-items: start;
+             
+    }
+}
+
+
+@media (min-width: 1024px){
+        
+    .catalogo_lista{
+        display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+       grid-row: 1fr 1fr;
+        justify-content: center;
+        justify-items: center;
+        align-items: start;
+        margin: 3%;
+    }
+
+    .catalogo_livro{
+        padding: 3%;
+      
+    }
+}

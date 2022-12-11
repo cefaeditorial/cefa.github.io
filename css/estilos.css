@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Raleway&display=swap');
+
+@font-face {
+    font-family: 'Forum', cursive;
+    src: url(fonts/Raleway);
+}
+@font-face {
+    font-family: 'Raleway', sans-serif;
+    src: url(fonts/Raleway);
+}
+
+
+body{
+    font-size: 15px;
+
+   /* font-family: 'Raleway', sans-serif;*/
+}
+
+.titulo {
+    font-family: 'Forum', cursive;
+    letter-spacing: 0.1rem;
+ 
+}
+
+.subtitulo{
+    font-weight: 450;
+    margin-top: 1rem;
+    
+}
+
+
+
+p{
+   
+    text-align: justify;
+    text-indent: 0.5rem; /* margem da primeira linha do texto*/
+    color: black;
+}
+
+
+
+
