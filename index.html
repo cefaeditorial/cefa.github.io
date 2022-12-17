@@ -1,56 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <title>CEFA | Home </title>
-        <meta charset="utf-8">
-        <meta name="description" content="O CEFA é uma instituição que trabalha na promoção da educação brasileira. Conheça o Centro de Estudos em Filosofia Americana e o CEFA Editorial">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <meta name="keywords" content="CEFA, filosofia americana, pragmatismo, centro de estudos, cefaeditorial, editora">
-        <meta name="author" content="Mariangela Cabelo - CEFA">
-        <link href="img/logoicon.ico" rel="icon">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/estilos.css">
-        <link rel="stylesheet" href="css/rodape.css"> 
-        
-        
-    </head>
-    <body>
-        <!-- Cabeçalho-->
-        <header class="cabecalho container">
-            <!--BARRA INICIAL-->
-            <a href="index.html">
-                <img class="cabecalho_logo" src="img/nav-bar-cefa.svg" title="Ir para a página inicial do CEFA" alt="CEFA" style="width:100px; height:50px;">  
-            </a>
-                    
-            <!-- MENU-->
-            <nav class="cabecalho_menu">
-               <ul> 
-                    <li  class="cabecalho_item-menu"><a href="editora.html"> Editora</a>
-                        <ul>
-                            <li><a href="editora.html#sobre"> Sobre</a></li>
-                            <li><a href="livros.html"> Livros</a></li>
-                            <li> Autores </li>
-                        </ul>
-                    </li>
+  <head>
+    <title>CEFA | Home </title>
+    <meta charset="utf-8">
+    <meta name="description" content="O CEFA é uma instituição que trabalha na promoção da educação brasileira. Conheça o Centro de Estudos em Filosofia Americana e o CEFA Editorial">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="keywords" content="CEFA, filosofia americana, pragmatismo, centro de estudos, cefaeditorial, editora">
+    <meta name="author" content="Mariangela Cabelo - CEFA">
+    <link href="img/logoicon.ico" rel="icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/rodape.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  </head>
 
-                    <li  class="cabecalho_item-menu"><a href="centro-de-estudos.html"> Centro</a>
-                        <ul>
-                            <li><a href="centro-de-estudos.html#sobre"> Sobre </a></li>
-                            <li><a href="metodo-das-narrativas.html"> Método das Narrativas </a></li>
-                            <li><a href="alberto-tosi.html"> Alberto Tosi</a></li>
-                        </ul> 
-                    </li>
-                </ul> 
-            </nav>
-        <hr>
-        </header>
-                       
-        <main>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #03658C;">
+        <!-- icon menu-->
+        <div class="container-lg">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Logo-->
+          <a class="navbar-brand" href="#"><img class="navbar-brand " src="img/logo.png" title="Ir para a página inicial do CEFA" alt="CEFA" style="width:100px; height:50px;"> </a>
+          <!-- search-->
+          <div class="d-flex">
+            <div class="bd-search" id="docsearch" data-bd-docs-version="5.2"></div> 
+          </div>
+          
+          <div class="offcanvas offcanvas-end text-bg-dark"  tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header" style="background-color: #024873">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENU</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Perto"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> EDITORA </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="editora.html#sobre"> Sobre</a></li>
+                    <li><a class="dropdown-item" href="livros.html"> Livros</a></li>
+                    <!-- <li class="dropdown-item"> Autores </li> -->
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> CENTRO</a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="centro-de-estudos.html#sobre"> Sobre </a></li>
+                    <li><a class="dropdown-item" href="metodo-das-narrativas.html"> Método das Narrativas </a></li>
+                    <li><a class="dropdown-item" href="alberto-tosi.html"> Alberto Tosi</a></li>                
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
              <!-- Conteúdo principal-->
             <h1 class="titulo">Home</h1>
             <article class="index_cefa">
                 <h2 class="subtitulo"> CEFA </h2>
-                <p> <a href="centro-de-estudos.html/#sobre">O Centro de Estudos em Filosofia Americana (CEFA)</a> é uma entidade 
+                <p> <a href="centro-de-estudos.html#sobre">O Centro de Estudos em Filosofia Americana (CEFA)</a> é uma entidade 
                     independente voltada para a pesquisa em filosofia e para a promoção de assuntos filosóficos e educacionais. </p>
                 <p> Possui um método de trabalho e linha de atuação. <a href="centro-de-estudos.html/#sobre">Saiba mais.</a> </p>
                 <p> Aqui você encontrará textos sobre pragmatismo e filosofia americana; e textos em geral sobre filosofia e crítica cultural</p>
@@ -81,5 +97,8 @@
         <footer class="rodape container">
                <p class="rodape_copyright"> &copy; Copyright CEFA Editorial </p>  
          </footer>
+         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
         </body>
+        
 </html>
